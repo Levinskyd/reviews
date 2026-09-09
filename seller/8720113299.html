@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Відгуки — Francisco</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+         background: #f0f2f5; color: #1a1a2e; }
+  .card { max-width: 600px; margin: 32px auto; background: #fff;
+           border-radius: 16px; padding: 28px; box-shadow: 0 4px 24px rgba(0,0,0,.08); }
+  .name { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; }
+  .badge { display: inline-block; padding: 4px 12px; border-radius: 20px;
+            font-size: .85rem; font-weight: 600; margin-bottom: 12px; }
+  .badge.verified { background: #e8f5e9; color: #2e7d32; }
+  .badge.reliable { background: #fff8e1; color: #f57f17; }
+  .stats { display: flex; gap: 20px; margin: 16px 0; flex-wrap: wrap; }
+  .stat .val { font-size: 1.6rem; font-weight: 700; }
+  .stat .lbl { font-size: .75rem; color: #666; }
+  .rating-bar { height: 8px; background: #eee; border-radius: 4px; margin: 16px 0; }
+  .rating-fill { height: 8px; background: linear-gradient(90deg,#43a047,#66bb6a);
+                  border-radius: 4px; width: 100%; }
+  h2 { font-size: 1.1rem; margin: 24px 0 12px; color: #444; }
+  .review { border: 1px solid #eee; border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+  .review.positive { border-left: 4px solid #43a047; }
+  .review.negative { border-left: 4px solid #e53935; }
+  .review-header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .listing { font-size: .85rem; color: #555; flex: 1; }
+  .date { font-size: .8rem; color: #999; }
+  .comment { margin-top: 8px; font-size: .9rem; color: #333; }
+  .no-reviews { color: #999; text-align: center; padding: 24px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="name">👤 Francisco</div>
+  
+  <div class="stats">
+    <div class="stat"><div class="val" style="color:#43a047">0</div>
+      <div class="lbl">🟢 Позитивних</div></div>
+    <div class="stat"><div class="val" style="color:#e53935">0</div>
+      <div class="lbl">🔴 Негативних</div></div>
+    <div class="stat"><div class="val">0</div>
+      <div class="lbl">📦 Угод</div></div>
+    <div class="stat"><div class="val">100%</div>
+      <div class="lbl">⭐ Рейтинг</div></div>
+  </div>
+  <div class="rating-bar"><div class="rating-fill"></div></div>
+  <h2>Відгуки покупців</h2>
+  <p class="no-reviews">Відгуків поки немає</p>
+</div>
+</body>
+</html>
